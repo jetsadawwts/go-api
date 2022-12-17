@@ -58,7 +58,7 @@ func main() {
 				w.Write([]byte(err.Error()))
 				return
 			}
-
+			
 			users = append(users, u)
 			fmt.Fprintf(w, "hello %s create users", "POST")
 			return
