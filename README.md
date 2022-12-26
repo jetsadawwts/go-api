@@ -20,6 +20,12 @@ run go database os.Getenv : DATABASE_URL=postgres://jtxpdewf:NmnaQwCgXDh35vTCB8A
 run go auth basic os.Getenv : AUTH_TOKEN="Basic YXBpZGVzaWduOjQ1Njc4" go test -v
 run go build integration : AUTH_TOKEN="Basic YXBpZGVzaWduOjQ1Njc4" go test -v -tags=integration
 
+go build : generate an executable for the current plantform and architecture
+go tool dist list : To find this list of possible plantforms
+GOOS=platform GOARCH=os go build -o name.exe . : build with specific OS, ARCH
+
+
+
 
           
  

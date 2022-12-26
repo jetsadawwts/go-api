@@ -4,6 +4,7 @@ import (
 	"database/sql"
 	"log"
 	"os"
+
 	_ "github.com/lib/pq"
 )
 
@@ -25,4 +26,3 @@ func InitDB() {
 		log.Fatal("can't create table", err)
 	}
 }
-
