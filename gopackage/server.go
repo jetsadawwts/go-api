@@ -23,7 +23,6 @@ func healthHandler(c echo.Context) error {
 
 func main() {
 	user.InitDB()
-
 	e := echo.New()
 	e.Use(middleware.BasicAuth(func (username, password string, c echo.Context) (bool, error) {
 		if username == "apidesign" && password == "45678" {
