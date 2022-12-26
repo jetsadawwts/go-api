@@ -14,11 +14,12 @@ Struct to Json = ตัวเเปลง Type Struct to Json
         fmt.Printf("string: %s \n", b) // string: {"id":1,"name":"AnuchitO","age":18}
         fmt.Println(err) // nil
 
-#cmd
-run go database os.Getenv DATABASE_URL=postgres://jtxpdewf:NmnaQwCgXDh35vTCB8AKUc3cjs3kJAxI@tiny.db.elephantsql.com/jtxpdewf go run server.go
+# Cmd
+run go database os.Getenv : DATABASE_URL=postgres://jtxpdewf:NmnaQwCgXDh35vTCB8AKUc3cjs3kJAxI@tiny.db.elephantsql.com/jtxpdewf go run server.go
 
 run go auth basic os.Getenv : AUTH_TOKEN="Basic YXBpZGVzaWduOjQ1Njc4" go test -v
 run go build integration : AUTH_TOKEN="Basic YXBpZGVzaWduOjQ1Njc4" go test -v -tags=integration
+
 
           
  
